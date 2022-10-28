@@ -1,0 +1,144 @@
+.container {
+  width: 1919px;
+  height: 1010px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #ebeff7 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.container h3 {
+  width: 596px;
+  height: 74px;
+  text-align: center;
+  font: normal normal medium 50px/74px Oswald;
+  font-size: 50px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  /*  margin: 128px 782px 24px 782px; */
+  margin-top: 128px;
+  margin-bottom: 24px;
+}
+.container p {
+  width: 596px;
+  height: 49px;
+  text-align: left;
+  font: normal normal normal Roboto;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0px;
+  color: #656565;
+  opacity: 1;
+  margin: 0px;
+}
+.cards {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  margin: 64px 142px 0px 141px;
+}
+
+.cards div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 394px;
+  margin-right: 20px;
+}
+.cards img {
+  height: 394px;
+  opacity: 1;
+  margin-bottom: 24px;
+}
+.cards h4 {
+  text-align: center;
+  font: normal normal medium 36px/53px Oswald;
+  font-size: 36px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin: 0px 0px 16px 0px;
+}
+.cards p {
+  text-align: center;
+  font: normal normal 200 50px/74px Oswald;
+  font-size: 50px;
+  letter-spacing: 0px;
+  color: #ff9300;
+  opacity: 1;
+  margin-bottom: 110px;
+}
+.title {
+  grid-area: title;
+}
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+/* Tablet screen */
+@media (min-width: 768px) and (max-width: 1540px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .cards {
+    display: grid;
+    margin: 48px 0px 0px 0px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title title"
+      "card1 card2"
+      "card3 card4";
+  }
+  .cards img {
+    height: 330px;
+  }
+}
+
+/* Smartphone screen */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .container p {
+    width: 460px;
+    height: 49px;
+    text-align: center;
+    line-height: 27px;
+    letter-spacing: 0px;
+
+    opacity: 1;
+    margin: 0px;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1rem;
+  }
+  .cards {
+    display: grid;
+    width: 90%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "title "
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+  }
+}

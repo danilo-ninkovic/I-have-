@@ -1,0 +1,117 @@
+.container {
+  width: 1920px;
+
+  padding-top: 132px;
+  padding-bottom: 128px;
+  background: #ebeff7 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: " kontakt oNama pomoc socMreze";
+}
+.kontakt {
+  grid-area: kontakt;
+  margin-left: 210px;
+  margin-right: 168px;
+}
+.kontakt div {
+  display: flex;
+  margin-top: 32px;
+}
+.kontakt span:first-child {
+  margin-right: 8px;
+}
+.kontakt div p {
+  margin: 0px;
+}
+.kontakt div p:first-child {
+  height: 14px;
+  font: normal normal normal 12px/14px Roboto;
+  letter-spacing: 0px;
+  color: #656565;
+  opacity: 1;
+}
+.kontakt div p:last-child {
+  height: 22px;
+  font: normal normal bold 18px/22px Roboto;
+  letter-spacing: 0px;
+  color: #656565;
+  opacity: 1;
+}
+.oNama {
+  grid-area: oNama;
+}
+.pomoc {
+  grid-area: pomoc;
+}
+.socMreze {
+  grid-area: socMreze;
+  margin-right: 325px;
+}
+.container h5,
+p {
+  height: 22px;
+  margin-bottom: 16px;
+}
+
+.container h5 {
+  text-align: left;
+  font: normal normal medium 18px/22px Roboto;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #656565;
+  opacity: 1;
+}
+.container p {
+  text-align: left;
+  font: normal normal normal 18px/22px Roboto;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #656565;
+  opacity: 1;
+}
+/* Tablet screen */
+@media (min-width: 768px) and (max-width: 1020px) {
+  .kontakt,
+  .oNama,
+  .pomoc,
+  .socMreze {
+    margin: 0px;
+  }
+  .container {
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      "pomoc oNama"
+      "kontakt socMreze";
+  }
+}
+
+/* Smartphone screen */
+@media screen and (max-width: 767px) {
+  .kontakt,
+  .oNama,
+  .pomoc,
+  .socMreze {
+    margin: 0px;
+  }
+
+  .container {
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "pomoc"
+      "oNama"
+      "kontakt"
+      "socMreze";
+  }
+}

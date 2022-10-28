@@ -1,0 +1,64 @@
+.container {
+  width: 1920px;
+  height: 885px;
+  display: flex;
+
+  background: transparent url("img/Mask Group 7.png") 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+}
+.main {
+  width: 606px;
+  height: 348px;
+  opacity: 1;
+  margin: 269px 1140px 268px 174px;
+}
+.title {
+  display: flex;
+  font-size: 24px;
+  text-align: left;
+  font: normal normal medium 24px/27px Oswald;
+  letter-spacing: 0.96px;
+  color: #000000;
+  opacity: 1;
+}
+.title p {
+  margin-right: 145px;
+}
+.title p:first-child {
+  margin-left: 24px;
+}
+.lines {
+  display: flex;
+  align-items: center;
+}
+.lines div:first-child {
+  width: 95px;
+  height: 5px;
+  background: #ff9300 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.lines div:last-child {
+  width: 511px;
+  height: 1px;
+  background: #656565 0% 0% no-repeat padding-box;
+}
+.paragraph {
+  width: 578px;
+  font: normal normal normal 18px/27px Roboto;
+  letter-spacing: 0px;
+  white-space: pre-line;
+  color: #656565;
+  opacity: 1;
+}
+@media (max-width: 1640px) {
+  .container {
+    width: 100%;
+    background: #1ab4d3 0% 0% no-repeat padding-box;
+
+    align-items: center;
+  }
+  .main {
+    margin: 0 auto;
+  }
+}

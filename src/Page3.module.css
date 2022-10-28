@@ -1,0 +1,47 @@
+.container {
+  width: 1920px;
+  height: 887px;
+  display: flex;
+  background: transparent url("img/Mask Group 13.png") 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+}
+.main {
+  width: 657.5px;
+  height: 405px;
+  opacity: 1;
+  margin: 249px 307.5px 233px 955px;
+}
+.main h3 {
+  width: 560px;
+  height: 134px;
+  text-align: left;
+  font: normal normal medium 50px/60px Oswald;
+  font-size: 50px;
+  letter-spacing: 0.96px;
+  color: #000000;
+  opacity: 1;
+  margin: 0 0 24px 0;
+}
+.main p {
+  width: 578px;
+  height: 130px;
+
+  text-align: left;
+  font: normal normal normal 18px/27px Roboto;
+  letter-spacing: 0px;
+  color: #656565;
+  opacity: 1;
+  margin: 0 0 -9px 0;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    background: #f4d2ad 0% 0% no-repeat padding-box;
+
+    align-items: center;
+  }
+  .main {
+    margin: 0 auto;
+  }
+}

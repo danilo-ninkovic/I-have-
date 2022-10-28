@@ -1,0 +1,103 @@
+.container {
+  width: 1920px;
+  height: 1304px;
+  background: #dfe3eb 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+}
+.title h3 {
+  height: 148px;
+  width: 406px;
+  font: normal normal medium 50px/74px Oswald;
+  font-size: 50px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-top: 128px;
+}
+.img_form {
+  grid-area: img_form;
+  display: flex;
+  justify-content: center;
+}
+.img_form img {
+  margin-top: 145px;
+  width: 670px;
+  height: 670px;
+  opacity: 1;
+  margin-right: 20px;
+}
+.form {
+  margin-top: 96px;
+  width: 394px;
+}
+.form label {
+  height: 22px;
+  text-align: center;
+  font: normal normal medium 18px/22px Roboto;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #656565;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+.form input {
+  width: 394px;
+  height: 50px;
+  border: 1px solid #939fb8;
+  border-radius: 4px;
+  background-color: inherit;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+.form textarea {
+  width: 394px;
+  border: 1px solid #939fb8;
+  border-radius: 4px;
+  background-color: inherit;
+  opacity: 1;
+  margin-bottom: 40px;
+}
+.form button {
+  width: 394px;
+  height: 61px;
+  background: #ff9300 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 4px #00000029;
+  border-radius: 8px;
+  opacity: 1;
+  border: none;
+  text-align: center;
+  font: normal normal bold 24px/29px Roboto;
+  letter-spacing: 1.44px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.img_form img:last-child {
+  width: 14px;
+  height: 16px;
+  margin-right: 8.65px;
+  margin-top: 0px;
+}
+.form p {
+  height: 19px;
+  text-align: center;
+  font: normal normal normal 16px/27px Roboto;
+  letter-spacing: 0px;
+  color: #656565;
+  opacity: 1;
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+  }
+  .img_form img:first-child {
+    display: none;
+  }
+}
